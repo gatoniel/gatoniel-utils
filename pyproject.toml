@@ -33,6 +33,7 @@ python = "^3.7"
 numpy = "^1.20.1"
 scikit-image = "0.18.1"
 scipy = "1.6.0"
+lmfit = "^1.0.2"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.812"
