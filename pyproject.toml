@@ -1,5 +1,5 @@
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry_core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 
@@ -10,7 +10,7 @@ style = "https://raw.githubusercontent.com/wemake-services/wemake-python-stylegu
 [tool.poetry]
 name = "gatoniel-utils"
 description = "Library with utils and helpers for myself."
-version = "0.1.0"
+version = "0.1.1-alpha.0"
 license = "MIT"
 
 authors = []
@@ -31,8 +31,8 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.7"
 numpy = "^1.20.1"
-scikit-image = "^0.18.1"
-scipy = "^1.6.1"
+scikit-image = "0.18.1"
+scipy = "1.6.0"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.812"
