@@ -32,12 +32,12 @@ def conc_growing_global_wrapper(params, data, t, x):
         t, x,
         params["D_over_a_sq"], params["beta"], params["t0"],
     )
-    return (data[..., 0]-data_theo) / data[..., 1]
+    return (data[..., 0] - data_theo) / data[..., 1]
 
 
 def conc_growing_global(data, t, x, start_t0, beta=None):
     params = lmfit.Parameters()
-    params.add("D_over_a_sq", value=0.01, min=0, vary=True)
+    params.add("D_over_a_sq", value=0.05, min=0, vary=True)
     if beta is None:
         params.add("beta", value=0.1, min=0, vary=True)
         params.add("t0", value=start_t0, vary=True)
@@ -51,5 +51,4 @@ def conc_growing_global(data, t, x, start_t0, beta=None):
     )
 
     result = mini.minimize()
-    ci_out = lmfit.conf_interval(mini, result)
-    return result, ci_out
+    return result

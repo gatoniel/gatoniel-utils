@@ -34,6 +34,7 @@ numpy = "^1.20.1"
 scikit-image = "0.18.1"
 scipy = "1.6.0"
 lmfit = "^1.0.2"
+matplotlib = "^3.3.4"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.812"
@@ -53,3 +54,4 @@ sphinx-autodoc-typehints = "^1.11"
 doc8 = "^0.8"
 m2r2 = "^0.2"
 tomlkit = "^0.7"
+notebook = "^6.2.0"

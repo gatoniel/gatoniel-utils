@@ -22,9 +22,9 @@ def create_position_maps(label, pixel_size=1):
         info[i][0]: abbreviation for position measure i
         info[i][1]: long info for position measure i
     """
+    assert label.dtype == bool
     edt = distance_transform_edt(label)
     r_mass = distance_transform_radial(label)
-    print(r_mass)
     # transform edt to make it more comparable to radial distances
     edt_inv = edt.max() - edt
 

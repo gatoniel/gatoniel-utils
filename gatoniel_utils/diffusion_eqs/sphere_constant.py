@@ -148,6 +148,7 @@ def conc_growing(t, D_over_a_sq, r_over_a, beta, t0, n_max=201, min_t=1e-6):
         sum_ = sums.cumsum(axis=0)[-1, :]
         sum_ = 1 - first_p - 2*beta/D_over_a_sq/r_over_a/np.pi*sum_
     else:
+        raise NotImplemented("r_over_a == 0 is buggy")
         sums[odd_start::2, :] = -summand_g0(
             t_tmp, n_odd, D_over_a_sq, beta
         )[::-1, :]
