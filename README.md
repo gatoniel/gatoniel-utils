@@ -17,6 +17,7 @@ Library with utils and helpers for myself.
 ## Installation
 
 ```bash
+conda install -c conda-forge fenics=2019.1.0
 pip install gatoniel-utils
 ```
 
