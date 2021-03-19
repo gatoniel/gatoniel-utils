@@ -12,6 +12,7 @@ def solve_linear_pde(
     u_D_array,
     T,
     D=1,
+    C1=0,
     num_r=100,
     min_r=0.001,
     tol=1e-14,
@@ -38,7 +39,7 @@ def solve_linear_pde(
     bc_at_R = DirichletBC(V, u_D, boundary_at_R)
 
     # Define initial values for free c
-    c_0 = Expression("0", degree=degree)
+    c_0 = Expression("C1", C1=C1, degree=degree)
     c_n = interpolate(c_0, V)
 
     # Define variational problem
