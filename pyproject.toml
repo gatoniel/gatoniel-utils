@@ -32,7 +32,7 @@ classifiers = [
 python = "^3.7"
 numpy = "^1.20.1"
 scikit-image = "0.18.1"
-scipy = "1.6.0"
+scipy = "1.6.1"
 lmfit = "^1.0.2"
 matplotlib = "^3.3.4"
 
