@@ -12,7 +12,7 @@ def bin_x_from_y(x, y, num_bins=100):
 
 def x_from_bins(x, y, bins):
     assert x.ndim <= 3
-    x = np.atleast_3d(x)
+    x = np.at least_3d(x)
 
     bins = np.copy(bins)
     bins[0] -= 1
