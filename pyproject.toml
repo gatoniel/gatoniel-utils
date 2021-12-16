@@ -37,7 +37,7 @@ lmfit = "^1.0.2"
 matplotlib = "^3.3.4"
 
 [tool.poetry.dev-dependencies]
-mypy = "^0.812"
+mypy = "^0.920"
 
 wemake-python-styleguide = "^0.15"
 flake8-pytest-style = "^1.4"
